@@ -129,9 +129,9 @@ jobs:
         run: npm i
         shell: bash
       
-      - name: npm run init
-        run: npm run init
-        shell: bash
+      # - name: npm run init
+      #   run: npm run init
+      #   shell: bash
       
       - name: npm run build
         run: npm run build
