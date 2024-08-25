@@ -77,13 +77,13 @@ jobs:
   build:
     needs: [release]
     
-    runs-on: ${{matrix.os}}
+    # runs-on: ${{matrix.os}}
     
     strategy:
       fail-fast: false
       matrix:
-        node: [16, 18, 20, 22]
-        os: [ubuntu-latest, macOS-latest, windows-latest]
+        node: [18, 20, 22]
+        os: [ubuntu-latest, macOS-latest, macOS-13, windows-latest]
 
     steps:
       - name: init
